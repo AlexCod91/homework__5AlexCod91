@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&family=Roboto:ital,wght@1,400;1,700;1,900&display=swap");
+@font-face {
+  font-family: "Lobster-Regular";
+  src: url("../fonts/Lobster-Regular.woff2") format("woff2")
+    url("../fonts/Lobster-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+body {
+  width: 1230px;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  font-family: "Lato", serif;
+  font-size: 16px;
+  font-style: normal;
+  color: #424551;
+  border: solid 1px black;
+}
+h2,
+h3 {
+  font-size: 25px;
+  color: cadetblue;
+  font-family: "Open-Sans-Condensed", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+a {
+  color: cadetblue;
+}
+/* p {
+  font-size: 15px;
+  color: cadetblue;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: italic;
+} */
+
+.poster-title {
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 60px;
+  color: #1e212c;
+  text-shadow: 0 4px 0 rgba(0, 0, 0, 0.25);
+  margin-bottom: 40px;
+}
+
+.poster-image {
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.poster-subtitle {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #1e212c;
+  margin-bottom: 36px;
+}
+.poster-subtitle ~ h2 {
+  margin-bottom: 48px;
+  /* display: inline-block; */
+  /* на всякий случай задал inline-block */
+  padding-left: 58px;
+}
+
+.poster-text {
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 36px;
+}
+.info {
+  margin-bottom: 24px;
+}
+.info ~ p {
+  margin-bottom: 60px;
+}
+
+.poster-list {
+  padding-left: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
+/* end of poster styles */
+
+/* start index homework styles */
+
+.menu {
+  font-size: 20px;
+  font-family: "Roboto", serif;
+  font-weight: 900;
+  font-style: normal;
+  max-width: 500px;
+  margin: 0 0 20px auto;
+}
+
+.subtitle-block {
+  margin-bottom: 10px;
+  margin-right: 25px;
+}
+
+.subtitle {
+  padding: 0 450px;
+}
+/* padding с лево и  с право слишком большой в результате текст сжалься     */
+
+.subtitle-text {
+  padding: 3% 15% 0;
+}
+
+.subtitle-block img {
+  padding: 25px 30px;
+}
+
+.article-block {
+  width: 75%;
+  margin-bottom: 35px;
+}
+/* без display: block margin не применяется (к строчным тегам не работает. ) */
+.article-text {
+  padding: 75px;
+}
+.article-block img {
+  display: block;
+  margin: 0 auto;
+}
+
+.content-block {
+  margin-bottom: 35px;
+}
+.content {
+  display: block;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.content-text {
+  display: inline-block;
+  width: 400px;
+}
+
+.view-block {
+  width: 500px;
+  margin: 0 auto 30px;
+}
+.view {
+  max-width: 100px;
+  margin: 0 auto;
+}
+
+.nesting-block {
+  max-width: 300px;
+  width: 300px;
+  max-height: 200px;
+  /* задал дополнительно width потому что скрол налаживается справа на текст и на картинку */
+  display: inline-block;
+  overflow: auto;
+  margin: 0 auto;
+  /* подскажите пж что я тут упустил что выравнивание не работает, условия вроде соблюдены */
+  /* или это из за diplay: inline-block? */
+}
+.feeding-block {
+  display: none;
+}
+
+.layout {
+  font-size: 40px;
+  color: #3c3e44;
+  font-family: "Lobster-Regular", inherit;
+  display: block;
+  text-align: center;
+}
+/* задал  display block для размещения текста по центру  */
